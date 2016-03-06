@@ -1,6 +1,8 @@
 package PhoneMain;
 
 import java.io.*;
+import PhoneProperties.Properties;
+import DriverProgram.Test;
 
 public class phone 
 {//This is the Declaration of the class phone which will hold the entries for the directory.
@@ -94,7 +96,7 @@ public class phone
 		int i = 0;
 		try
 		{
-			FileWriter outstream = new FileWriter(Resources.path);
+			FileWriter outstream = new FileWriter(Properties.path);
 			PrintWriter out = new PrintWriter(outstream);
 
 			while(i < current)
